@@ -7,6 +7,9 @@ public class Main
 
 	private Main()
 	{
-		System.out.println("Sup");
+		Reader r = new Reader("data/example.in");
+		Pizza pizza = r.readFile();
+
+		pizza.printPizzaDetails();
 	}
 }
